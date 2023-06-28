@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bienvenidos a CineMark</h1>
+    <label for="">Ingrese la edad: </label>
+    <input type="number" name="" id="usuarioEdad" min="1" max="99"> <br><br>
+    <label for="">Genero: </label>
+    <select name="" id="genero">
+        <option value="accion">Acción</option>
+        <option value="aventura">Aventura</option>
+        <option value="comedia">Comedia</option>
+        <option value="drama">Drama</option>
+    </select>
+    <br><br>
+    <button onclick="recomendar()">Submit</button>
+    <h2>Recomendación: <span id="respuesta"></span></h2>
+
+    <section>
+        <img src="img/pelicula1.jpg" alt="">
+        <img src="img/pelicula2.jpg" alt="">
+        <img src="img/pelicula3.jpg" alt="">
+        <img src="img/pelicula4.jpg" alt="">
+        <img src="img/pelicula5.jpg" alt="">
+        <img src="img/pelicula6.jpg" alt="">
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+</html>
