@@ -1,0 +1,12 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}

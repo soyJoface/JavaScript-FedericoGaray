@@ -1,0 +1,20 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: azure;
+    text-align: center;
+}
+
+.elementoMax {
+    background-color: lightgreen;
+}
+
+.elementoMin {
+    background-color: lightcoral;
+}
