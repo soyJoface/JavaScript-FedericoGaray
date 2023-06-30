@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Resumen Banco</h1>
+    <hr>
+    <h3>Nombre: <small id="nombre"></small> </h3>
+    <h3>Nro Cuenta: <small id="nroCuenta"></small> </h3>
+    <div>
+        <h3>Saldo:</h3>
+        <ul>
+            <li>Dólares: <small id="saldoUSD"></small> </li>
+            <li>Euros: <small id="saldoEUR"></small> </li>
+        </ul>
+        
+    </div>
+    <h3>CBU: <small id="cbu"></small> </h3>
+    <h3>Fecha Apertura Cuenta: <small id="abierto"></small> </h3>
+    <hr>
+    <button onclick="extraerDatos()">Consultar</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
