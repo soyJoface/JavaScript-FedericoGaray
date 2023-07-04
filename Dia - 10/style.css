@@ -1,0 +1,29 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 25%;
+    margin-top: 25px;
+}
+
+body {
+    background-color: darkblue;
+    text-align: center;
+    color: #fff;
+    font-size: larger;
+
+}
+
+.espera img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.contenido {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+
