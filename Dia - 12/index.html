@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicación con el Servidor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body onload="cargarDatos()">
+    <h1>Comunicaciones</h1>
+    <hr>
+    <h2>Referencias Existentes</h2>
+    <div class="div">
+
+        <div id="cargarDatosGeneral"></div>
+    </div>
+
+
+    <div class="div">
+        <div id="consultas">
+            <label for="miConsulta"><h3>Digite la referencia que desea consultar:</h3></label>
+            <input type="number" name="" id="miConsulta" placeholder="ID aqui..." min="1" max="10">
+            <button onclick="consultar()">Consultar</button>
+        </div>
+    </div>
+
+    <div class="div">
+        <div id="respuestaModelo">
+            <h4>Referencia</h4>
+            <textarea name="" id="referencia" cols="30" rows="5"></textarea>
+        </div>
+        <div id="respuestaModelo">
+            <h4>Modelo</h4>
+            <textarea name="" id="modelo" cols="30" rows="5"></textarea>
+        </div>
+        <div id="respuestaModelo">
+            <h4>Color</h4>
+            <textarea name="" id="color" cols="30" rows="5"></textarea>
+        </div>
+        <div id="respuestaModelo">
+            <h4>Almacenamiento</h4>
+            <textarea name="" id="almacenamiento" cols="30" rows="5"></textarea>
+        </div>
+        <div id="respuestaModelo">
+            <h4>Procesador</h4>
+            <textarea name="" id="procesador" cols="30" rows="5"></textarea>
+        </div>
+    </div>
+    
+    <div class="div">
+        <div class="btn">
+            <button onclick="modificar()">Modificar</button>
+            <button onclick="eliminar()">Eliminar</button>
+        </div>
+    </div>
+    <hr>
+
+    <div class="agregarDispositivo">
+        <h3>Agregar Dispositivo:</h3>
+        <label for="marca">Marca:</label>
+        <input type="text" name="" id="agregarMarca"><br><br>
+        <label for="agregarModelo">Modelo:</label>
+        <input type="text" name="" id="agregarModelo"><br><br>
+        <label for="agregarColor">Color:</label>
+        <input type="text" name="" id="agregarColor"><br><br>
+        <label for="agregarAlmacenamiento">Almacenamiento:</label>
+        <input type="text" name="" id="agregarAlmacenamiento"><br><br>
+        <label for="agregarProcesador">Procesador:</label>
+        <input type="text" name="" id="agregarProcesador"><br><br>
+    </div>
+
+
+    <div class="botonFinal">
+        <button id="botonAgregar" onclick="agregar()">Agregar</button>
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

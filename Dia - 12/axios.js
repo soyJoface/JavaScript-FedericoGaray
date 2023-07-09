@@ -1,25 +1,19 @@
+// AXIOS:
 
+//GET
 axios.get('https://jsonplaceholder.typicode.com/posts')
-.then( (respuesta) => console.log(respuesta.data) )
-.catch((error) => console.error(error))
+    .then((respuesta) => console.log( respuesta.data))
+    .catch((error) => console.error(error))
 
 
-
-
-
-
-
-
+//POST
 let datos = {
-    title: 'Nuevo Post',
+    title: 'Nuevo POST',
     body: 'Mi contenido'
 }
-
 axios.post('https://jsonplaceholder.typicode.com/posts', datos)
-.then( (respuesta) => console.log( 'Post creado con éxito',respuesta.data) )
-.catch((error) => console.error(error))
-
-
+    .then((respuesta) => console.log('El post fue creado con éxito', respuesta))
+    .catch((error) => console.error('Error al publicar', error))
 
 
 

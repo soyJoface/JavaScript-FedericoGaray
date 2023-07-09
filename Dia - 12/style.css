@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+hr {
+    border: 1px dotted black;
+    margin-top: 50px;
+  
+}
+.div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+textarea {
+    text-align: center;
+}
+
+
+
+.agregarDispositivo {
+    margin-top: 35px;
+    text-align: center;
+
+}
+
+input {
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.botonFinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
