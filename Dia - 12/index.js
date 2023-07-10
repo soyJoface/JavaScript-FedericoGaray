@@ -1,4 +1,5 @@
 
+
 function cargarDatos(){
     fetch('https://my-json-server.typicode.com/fedegaray/telefonos/db')
     .then((res) => res.json())
@@ -41,7 +42,7 @@ function modificar(){
     
     let marcaNueva          = document.querySelector('#referencia').value     
     let modeloNuevo         = document.querySelector('#modelo').value         
-    let colorNuevo           = document.querySelector('#color').value          
+    let colorNuevo          = document.querySelector('#color').value          
     let almacenamientoNuevo = document.querySelector('#almacenamiento').value 
     let procesadorNuevo     = document.querySelector('#procesador').value     
     
@@ -84,8 +85,45 @@ function eliminar(){
     .catch((error) => console.error(error))
 }
 
-// TODO: Función Agregar
 
 
+function agregar() {
+
+    let agregarReferencia     = document.querySelector('#agregarMarca').value;
+    let agregarModelo         = document.querySelector('#agregarModelo').value;
+    let agregarColor          = document.querySelector('#agregarColor').value;
+    let agregarAlmacenamiento = document.querySelector('#agregarAlmacenamiento').value;
+    let agregarProcesador     = document.querySelector('#agregarProcesador').value;
+    
+    try {
+
+        fetch('https://my-json-server.typicode.com/fedegaray/telefonos/dispositivos', {
+            method: 'POST',
+            headers: {
+                'Content-Type' : 'application/json'
+            },
+            body: JSON.stringify({
+                marca: agregarReferencia,
+                modelo: agregarModelo,
+                color: agregarColor,
+                almacenamiento: agregarAlmacenamiento,
+                procesador: agregarProcesador
+            })
+        })
+        .then((res) => res.json())
+        .then((datos) => {
+            cargarDatos();
+            alert(`Se ha agregado un nuevo archivo:\n Marca: ${datos.marca}\n Modelo: ${datos.modelo}\n Color: ${datos.color}\n Almacenamiento: ${datos.almacenamiento}GB\n Procesador: ${datos.procesador}`)
+        })
+        .catch(error => {
+            throw new Error('Error en la solicitud: ' + error)
+        })
+
+    } catch(error) {
+        console.error(error)
+    }
+
+
+}
 
 
